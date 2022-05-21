@@ -491,7 +491,7 @@ class IngData {
   int order;
 
   factory IngData.fromJson(Map<String, dynamic> json) => IngData(
-        id: json["id"] == null ? null : json["id"],
+        id: json["id"],
         firstName: json["first_name"],
         lastName: json["last_name"],
         street: json["street"],
@@ -505,14 +505,13 @@ class IngData {
         phoneNumber: json["phone_number"],
         postalCode: json["postal_code"],
         extraDescription: json["extra_description"],
-        shippingMethod:
-            json["shipping_method"] == null ? null : json["shipping_method"],
-        orderId: json["order_id"] == null ? null : json["order_id"],
-        order: json["order"] == null ? null : json["order"],
+        shippingMethod: json["shipping_method"],
+        orderId: json["order_id"],
+        order: json["order"],
       );
 
   Map<String, dynamic> toJson() => {
-        "id": id == null ? null : id,
+        "id": id,
         "first_name": firstName,
         "last_name": lastName,
         "street": street,
@@ -526,9 +525,9 @@ class IngData {
         "phone_number": phoneNumber,
         "postal_code": postalCode,
         "extra_description": extraDescription,
-        "shipping_method": shippingMethod == null ? null : shippingMethod,
-        "order_id": orderId == null ? null : orderId,
-        "order": order == null ? null : order,
+        "shipping_method": shippingMethod,
+        "order_id": orderId,
+        "order": order,
       };
 }
 

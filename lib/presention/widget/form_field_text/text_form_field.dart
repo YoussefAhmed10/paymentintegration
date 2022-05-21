@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class DefaultFormField extends StatelessWidget {
   final TextEditingController controller;
-  final FormFieldValidator<String>? validate;
+  final dynamic validate;
   final TextInputType type;
   final Widget label;
   final String hint;

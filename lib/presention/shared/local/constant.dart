@@ -9,7 +9,7 @@ String finalTokenCard = '';
 
 String finalTokenKiosk = '';
 
-String integrationIdCard = '2026718';
+int integrationIdCard = 2026718;
 
 String integrationIdKiosk = '2060941';
 

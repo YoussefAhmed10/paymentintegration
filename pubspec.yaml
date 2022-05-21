@@ -38,6 +38,8 @@ dependencies:
   bloc: ^8.0.3
   bloc_flutter: ^0.1.0
   flutter_bloc: ^8.0.1
+  http: ^0.13.4
+  webview_flutter: ^3.0.4
 
 dev_dependencies:
   flutter_test:
@@ -62,9 +64,11 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+     - assets/card.png
+     - assets/ref.jpg
+     - assets/refe.png
+   
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
