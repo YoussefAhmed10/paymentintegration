@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:paymentintegration/presention/screen/payment/refcode.dart';
-import 'package:paymentintegration/presention/screen/payment/visacard.dart';
-import 'package:paymentintegration/presention/widget/navigattion/navigation.dart';
+import 'refcode.dart';
+import 'visacard.dart';
+import '../../widget/navigattion/navigation.dart';
 
 class ToggleScreen extends StatelessWidget {
   const ToggleScreen({Key? key}) : super(key: key);
@@ -24,7 +24,7 @@ class ToggleScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(15.0),
                   child: InkWell(
                     onTap: () {
-                      navigatTo(context, VisaCardScreen());
+                      navigatTo(context, const VisaCardScreen());
                     },
                     child: Container(
                       width: 250,

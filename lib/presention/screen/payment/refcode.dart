@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:paymentintegration/presention/shared/local/constant.dart';
-import 'package:paymentintegration/presention/shared/style/color.dart';
+import '../../shared/local/constant.dart';
+import '../../shared/style/color.dart';
 
 class RefCodeScreen extends StatelessWidget {
   const RefCodeScreen({Key? key}) : super(key: key);

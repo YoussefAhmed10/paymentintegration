@@ -1,10 +1,10 @@
 import 'package:bloc/bloc.dart';
 
 import 'package:flutter/material.dart';
-import 'package:paymentintegration/logic/bloc/bloc-observer.dart';
+import 'logic/bloc/bloc-observer.dart';
 
-import 'package:paymentintegration/presention/screen/register/register.dart';
-import 'package:paymentintegration/presention/shared/remote/dio_helper.dart';
+import 'presention/screen/register/register.dart';
+import 'presention/shared/remote/dio_helper.dart';
 
 void main() async {
   BlocOverrides.runZoned(

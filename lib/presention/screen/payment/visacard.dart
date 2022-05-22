@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:paymentintegration/presention/screen/register/register.dart';
 import 'package:paymentintegration/presention/shared/local/constant.dart';

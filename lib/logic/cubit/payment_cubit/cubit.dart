@@ -173,4 +173,24 @@ class PaymentCubit extends Cubit<PaymentStates> {
       emit(PaymentRefCodeErrorState(error.toString()));
     });
   }
+
+  Future getMobileWalletCode() async {
+    DioHelper.postData(
+      url: 'acceptance/payments/pay',
+      data: {
+        "source": {
+          "identifier": "AGGREGATOR",
+          "subtype": "AGGREGATOR",
+        },
+        "payment_token": finalTokenKiosk
+      },
+    ).then((value) {
+      refCode = value.data['id'].toString();
+      print('refCode : $refCode');
+      emit(PaymentRefCodeSuccessState());
+    }).catchError((error) {
+      print(error.toString());
+      emit(PaymentRefCodeErrorState(error.toString()));
+    });
+  }
 }

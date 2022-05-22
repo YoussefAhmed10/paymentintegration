@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:paymentintegration/logic/cubit/payment_cubit/cubit.dart';
-import 'package:paymentintegration/logic/cubit/payment_cubit/states.dart';
-import 'package:paymentintegration/presention/screen/payment/toggel.dart';
-import 'package:paymentintegration/presention/shared/style/color.dart';
-import 'package:paymentintegration/presention/widget/Buttons/elvated_button.dart';
-import 'package:paymentintegration/presention/widget/form_field_text/text_form_field.dart';
-import 'package:paymentintegration/presention/widget/navigattion/navigation.dart';
+import '../../../logic/cubit/payment_cubit/cubit.dart';
+import '../../../logic/cubit/payment_cubit/states.dart';
+import '../payment/toggel.dart';
+import '../../shared/style/color.dart';
+import '../../widget/Buttons/elvated_button.dart';
+import '../../widget/form_field_text/text_form_field.dart';
+import '../../widget/navigattion/navigation.dart';
 
 class RegisterScreen extends StatelessWidget {
   RegisterScreen({Key? key}) : super(key: key);

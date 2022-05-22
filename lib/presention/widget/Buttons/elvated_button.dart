@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:paymentintegration/presention/shared/style/color.dart';
+import '../../shared/style/color.dart';
 // import 'package:payment_methode/presentation/shared/local/constance.dart';
 
 class DefaultElevatedButton extends StatelessWidget {
